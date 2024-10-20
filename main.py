@@ -1,11 +1,10 @@
-stroka=input("Введите строку:") 
-
-i=0 
-for char in stroka.lower(): 
-     if char !="а" and char!="о"and  char!="у"and  char!="ы"and  char!="э"and  char!="я"and   char!="е"and   char!="ё"and   char!="ю" and   char!="и": 
-      char=i 
-      print("Индекс согласной буквы :", i)
-     i+=1
+str=input("Введите строку:")#ввод строки с клавиатуры
+i=0# создаем переменную отвечющую за символ и присваиваем ей значение 0
+for char in str.lower():#используем цикл for для перебора каждого символа из строки
+     if char !="а" and char!="о"and  char!="у"and  char!="ы"and  char!="э"and  char!="я"and   char!="е"and   char!="ё"and   char!="ю" and   char!="и":#используем оператор if для нахождения только согласных  
+      char=i#создаем переменную char и присваиваем значение i
+      print("Индекс согласной буквы :", i)#вывод индекса согласной буквы на консоль
+     i+=1#переход к следующему символу 
 
 
    
